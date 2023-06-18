@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Name:</h1>
+    <!--<p>{{name}}</p>
+    <h1>total</h1>
+    <p>{{total}}</p>
+    <h1>grade</h1>
+    <p>{{grade}}</p>
+    <h1>Result</h1>
+    <p>{{result}}</p> -->
+    <label>Name:</label><b>{{name}}</b></br>
+    <label>M1:</label><b>{{m1}}</b></br>
+    <label>physics:</label><b>{{phy}}</b></br>
+    <label>ps:</label><b>{{ps}}</b></br>
+    <label>total:</label><b>{{total}}</b></br>
+    {% if m1>=28 and phy>=28 and ps>=28 %}
+    <b>You are passed</b>
+    {% if 90<=total<=120 %}
+    <b>Grade:C</b>
+    {% elif 121<=total<= 150 %}
+    <b>Grade:B</b>
+    {% else %}
+    <b>Grade:A</b>
+    {% endif %}
+    {% else %}
+    <b>You are failed</b>
+    {% endif %}
+
+
+
+</body>
+</html>
